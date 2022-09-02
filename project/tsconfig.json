@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "paths": {
+      "@shared/*": ["./src/shared/*"],
+      "@ts-shared/*": ["../../ts-shared/src/*"],
+      "@np-db/*": ["../../np-db/typescript/src/*"],
+      "@npx/*": ["../../../[nopixel]/npx/lib/*"],
+      "*": ["types/*"]
+    },
+    "noImplicitAny": false,
+    "module": "es6",
+    "target": "es2017",
+    "lib": ["es2017", "es2019"],
+    "types": ["@citizenfx/server", "@citizenfx/client", "@types/node", "@types/jest"],
+    "moduleResolution": "node",
+  },
+  "exclude": ["node_modules"],
+  "include": [
+    "./**/*",
+    "../../../[nopixel]/npx/lib/**/*.ts",
+    // "../../../[nopixel]/np-db/typescript/src/*.ts"
+    "../../../[nopixel]np-shared/types/*.d.ts",
+    "../../ts-shared/src/shared/types/*.d.ts",
+    "./src/shared/types/*.d.ts",
+    // "./src/shared/utils/*.ts"
+  ],
+}
